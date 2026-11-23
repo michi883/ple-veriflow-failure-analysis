@@ -3,7 +3,7 @@
 Research materials for our Kaggle Writeup in the hackathon *Google - Agent Harness on Physical-Engineering's Last Exam (PLE)*:
 <https://www.kaggle.com/competitions/physical-engineerings-last-exam/writeups/self-checks-verify-arithmetic-not-decisions-a-pl>
 
-**This repository is not the competition entry.** The entry is the organizers' official submission template, unchanged: [michi883/ple-baseline](https://github.com/michi883/ple-baseline) at commit `d988c45fcb8b860268588de379cf5436f1c70467`. This repository holds what we contributed: a failure analysis of one confidently wrong agent run, three follow-up experiments, their saved results, and a script that recomputes every number in the Writeup.
+**This repository is not the competition entry.** The entry is [michi883/ple-baseline](https://github.com/michi883/ple-baseline) at commit `81c4e77ccee7e6eb8832241f5364e75674f9e759`: the organizers' official submission template plus Scope Guard, a deterministic check we added to it. (Until 2026-11-22 the entry was the template unchanged, commit `d988c45fcb8b860268588de379cf5436f1c70467`, which is still the first commit there.) This repository holds what we contributed: a failure analysis of one confidently wrong agent run, three follow-up experiments, their saved results, and a script that recomputes every number in the Writeup.
 
 ## Findings
 
@@ -15,7 +15,9 @@ Research materials for our Kaggle Writeup in the hackathon *Google - Agent Harne
    - *Evidence-dependence tests* (change the evidence, see whether the decision moves): 0 of 7 correct decisions were falsely flagged, but both wrong decisions followed the changed evidence correctly. Their errors are misapplied rules, which these tests cannot see.
    - *A rule-aware change gate*: 27/27 on the nine decisions it was tuned on, then 21/25 against a baseline of 22/25 on 25 held-out decisions from two unseen tasks, at twice the cost and 2.6× the latency.
 
-Details: [docs/FAILURE_ANALYSIS.md](docs/FAILURE_ANALYSIS.md), [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md).
+6. **Scope Guard, and one run that proves little.** From finding 1 we built Scope Guard: it flags, with no model call, table rows keyed outside the section an instruction confines the work to. It passes 20 deterministic tests and is part of the entry. In our one dev run of the entry (`data/scope_guard_run/run.json`) the task scored 1.0, but the guard raised no flag: the agent made none of the five unlicensed changes. Same model, same task, three runs: 0.543, 0.543, 1.0. The improvement cannot be attributed to the guard.
+
+Details: [docs/FAILURE_ANALYSIS.md](docs/FAILURE_ANALYSIS.md), [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md). The guard's code, tests and description are in the entry repository.
 
 ## Reproduce
 
@@ -23,7 +25,7 @@ Details: [docs/FAILURE_ANALYSIS.md](docs/FAILURE_ANALYSIS.md), [docs/EXPERIMENTS
 python3 reproduce.py
 ```
 
-Python 3.10+ standard library only. No API key, no network, no Docker, no gated files; it takes about a second. It recomputes 56 values from the files here and compares each with the value the Writeup states.
+Python 3.10+ standard library only. No API key, no network, no Docker, no gated files; it takes about a second. It recomputes 67 values from the files here and compares each with the value the Writeup states.
 
 Individual pieces:
 
@@ -40,12 +42,13 @@ uv run --with matplotlib python figures/make_figures.py   # the three Writeup fi
 
 | Component | Author | License | Where |
 |---|---|---|---|
-| Submitted harness and its 29-task dev artifacts | PLE organizers | Apache-2.0 | [michi883/ple-baseline](https://github.com/michi883/ple-baseline), an unchanged copy of [physical-engineerings-last-exam/submission-template](https://github.com/physical-engineerings-last-exam/submission-template) |
+| Base of the submitted harness (official template) and the 29-task dev run shown in Figures 2A and 3A | PLE organizers | Apache-2.0 | [physical-engineerings-last-exam/submission-template](https://github.com/physical-engineerings-last-exam/submission-template); unchanged copy at [ple-baseline@d988c45](https://github.com/michi883/ple-baseline/tree/d988c45fcb8b860268588de379cf5436f1c70467) |
+| Scope Guard, its tests, and the one-task dev artifacts of the entry | us | Apache-2.0 | [michi883/ple-baseline](https://github.com/michi883/ple-baseline) |
 | `veriflow-ple-starter`, the harness whose run we analyze | Pablo Diego Pereira, exported by the Kaggle notebook [Physical Engineerings Last Exam: Starter Notebook](https://www.kaggle.com/code/pablodiegoo/physical-engineerings-last-exam-starter-notebook); built on Google's `sample_submissions/plan-verify` | Apache-2.0 | [third_party/veriflow-ple-starter](third_party/veriflow-ple-starter), byte-identical except one line |
 | PLE benchmark, dev tasks, graders, competition kit | Han et al. 2026; Google | dev tasks gated; kit Apache-2.0 | not redistributed here |
 | Failure analysis, experiment code, saved results, figures | us | Apache-2.0 (code), CC BY 4.0 (text and figures) | this repository |
 
-We did not write either harness. How we identified the source of `veriflow-ple-starter`: [docs/PROVENANCE.md](docs/PROVENANCE.md).
+We wrote neither the template nor the starter; in the entry, only Scope Guard is ours. How we identified the source of `veriflow-ple-starter`: [docs/PROVENANCE.md](docs/PROVENANCE.md).
 
 ## Layout
 
@@ -57,7 +60,8 @@ experiments/                 experiment code, decision definitions, redacted mod
   score_pilot.py score_arms.py score_heldout.py   scorers; run on the redacted replies
   results/                   149 saved replies (structured fields only)
 data/veriflow_run/           run metrics, per-criterion grades, content-free step table
-data/template_baseline/      per-task outcomes of the organizers' 29-task dev run
+data/template_baseline/      per-task outcomes of the organizers' 29-task dev run of the unmodified template
+data/scope_guard_run/        metrics of our one dev run of the entry (template + Scope Guard)
 data/WITHHELD.json           SHA-256 of every file used but not published
 figures/                     the three Writeup figures and the script that draws them
 third_party/                 the public starter harness, as run

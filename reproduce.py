@@ -108,7 +108,7 @@ def main() -> int:
     check(s, "total API spend on all three experiments ($)", int(spend * 100) / 100, 8.56)
     check(s, "saved model replies", sum(1 for _ in (REPO / "experiments/results").rglob("*.json")), 149)
 
-    # 6. The submitted template's 29-task dev run (organizers' public artifacts)
+    # 6. The organizers' 29-task dev run of the unmodified template (their public artifacts)
     s = "6 template"
     rows = list(csv.DictReader((REPO / "data/template_baseline/dev_tasks.csv").open()))
     score = [float(r["reward"]) for r in rows]
@@ -136,6 +136,30 @@ def main() -> int:
     for name, entry in run["harness"]["files"].items():
         check(s, f"third_party/veriflow-ple-starter/{name} is the file the run used (git blob)",
               git_blob(REPO / "third_party/veriflow-ple-starter" / name), entry.split()[1])
+
+    # 8. Our one run of the submitted harness (template + Scope Guard) on engineers-estimate-check
+    s = "8 guarded run"
+    g = json.loads((REPO / "data/scope_guard_run/run.json").read_text())
+    u, price = g["usage"], g["price_usd_per_mtok"]
+    fresh = u["input_tokens"] - u["cache_read_tokens"]
+    rest = u["cache_read_tokens"] * price["cache_read"] + u["output_tokens"] * price["output"]
+    usd = ((fresh * price["input"] + rest) / 1e6, (fresh * price["cache_write"] + rest) / 1e6)
+    check(s, "score, rubric points earned / possible", (g["grading"]["reward"], g["grading"]["weighted_points"],
+                                                        g["grading"]["possible_weighted_points"]), (1.0, 46.0, 46.0))
+    check(s, "dev tasks with artifacts / dev tasks", (g["dev_set"]["tasks_with_artifacts"], g["dev_set"]["tasks"]), (1, 29))
+    check(s, "dev score with the other 28 tasks counted 0", int(g["grading"]["reward"] / g["dev_set"]["tasks"] * 1000) / 1000, 0.034)
+    check(s, "tokens: input (M), output (k), cached (M)", (round(u["input_tokens"] / 1e6, 2), round(u["output_tokens"] / 1e3),
+                                                          round(u["cache_read_tokens"] / 1e6, 2)), (9.42, 176, 8.79))
+    check(s, "cached share of input (%)", round(100 * u["cache_read_tokens"] / u["input_tokens"]), 93)
+    check(s, "agent time (min), model calls, tool calls", (round(u["agent_seconds"] / 60), u["model_calls"], u["tool_calls"]), (27, 45, 120))
+    check(s, "cost at list price ($): fresh input all plain, all cache-write", (round(usd[0], 2), round(usd[1], 2)), (7.79, 8.42))
+    check(s, "cost, rounded ('about $8')", round(sum(usd) / 2), 8)
+    check(s, "guard log: active lines, flags, notices the model saw, flags on the final memo",
+          (g["guard"]["log_lines_active"], g["guard"]["log_lines_flagged"], g["guard"]["notices_in_what_the_model_saw"],
+           g["guard"]["flags_on_final_deliverable"]), (1, 0, 0, 0))
+    check(s, "its Section 2 subtotal is the reference subtotal, to the dollar", g["deliverable"]["section_2_subtotal"],
+          round(d["reference_subtotal"]))
+    check(s, "its bond figure ($)", g["deliverable"]["bond"], 5384000)
 
     width = max(len(c[1]) for c in CHECKS)
     bad, last = 0, None
