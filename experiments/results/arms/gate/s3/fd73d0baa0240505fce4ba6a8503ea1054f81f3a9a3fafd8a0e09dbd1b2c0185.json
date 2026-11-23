@@ -1,0 +1,101 @@
+{
+ "decision": "D2-2.36",
+ "test": "baseline",
+ "prompt_sha256": "fd73d0baa0240505fce4ba6a8503ea1054f81f3a9a3fafd8a0e09dbd1b2c0185",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 22848,
+  "inference_geo": "global",
+  "input_tokens": 1287,
+  "output_tokens": 2298,
+  "output_tokens_details": {
+   "thinking_tokens": 846
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.0556776,
+ "latency_s": 17.9,
+ "effort": "medium",
+ "max_tokens": 12000,
+ "arm": "gate",
+ "redacted": true,
+ "text_sha256": "943bc486990a929890ed29b521b4147f5fc26b38378e064020b94d67b1db7a49",
+ "text_chars": 3386,
+ "prose_outside_json": false,
+ "answer": {
+  "original": "absent",
+  "proposed": {
+   "treatment": "carry",
+   "schedule_item": "2.36",
+   "quantity": 10,
+   "unit": "EA",
+   "unit_price": 8750.0,
+   "amount": 87500.0
+  },
+  "final": {
+   "treatment": "carry",
+   "schedule_item": "2.36",
+   "quantity": 10,
+   "unit": "EA",
+   "unit_price": 8750.0,
+   "amount": 87500.0
+  },
+  "changes_original": true,
+  "link": "direct",
+  "confidence": 0.62,
+  "governing_rules": [
+   {
+    "id": "R1",
+    "verbatim": true
+   },
+   {
+    "id": "R4",
+    "verbatim": true
+   },
+   {
+    "id": "R5",
+    "verbatim": true
+   }
+  ],
+  "evidence_verbatim": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "keep_or_flag_rules": [
+   {
+    "id": "R6",
+    "condition_met": false
+   },
+   {
+    "id": "R7",
+    "condition_met": false
+   },
+   {
+    "id": "R5",
+    "condition_met": false
+   }
+  ],
+  "scope_rules": [
+   {
+    "id": "R4",
+    "in_scope": true
+   },
+   {
+    "id": "R2",
+    "in_scope": true
+   }
+  ]
+ }
+}

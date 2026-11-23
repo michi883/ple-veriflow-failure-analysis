@@ -1,0 +1,54 @@
+{
+ "task": "engineers-estimate-check",
+ "harness": {
+  "name": "veriflow-ple-starter",
+  "model_api": "anthropic/claude-opus-5-5",
+  "tree": "2e0034e3ba6ff49810ec2d975bb08d7b420c709f22f4bd00d13a96a6fe8750a1",
+  "files": {
+   "requirements.txt": "100644 a1c7a076e5a2cd7ab14843ad5b5266e5e8511b32",
+   "serve.py": "100644 891c4f317ce9d5c9355fbe3d1e763b1bd36bd79d",
+   "submission.yaml": "100644 b6b70215ebcfd187bb5373669ca4ebab5c6f4ebd",
+   "taskbridge.py": "100644 009617aa38fa6ffd6b0b274617b12fc136900edb"
+  },
+  "commit": "f6a771c22008e677da8f4e3029f1703f6b2ef000",
+  "dirty": false,
+  "note": "third-party code, see third_party/veriflow-ple-starter/README.md"
+ },
+ "model": "claude-opus-5-5 (Anthropic API, local run)",
+ "judge_model": "claude-opus-5-5",
+ "dataset": {
+  "repo": "google/physical-engineerings-last-exam",
+  "revision": "e0c21fa558c3127785656398e3b3bd7da5e5a5a6",
+  "dev_set_sha256": "85ad6d96fbf76ee64d9fb6339b3bf342b07128a2ebadc0a10f008c95dac01a48"
+ },
+ "timing": {
+  "trial_started_at": "2026-11-22T18:55:58.409849Z",
+  "trial_finished_at": "2026-11-22T19:45:38.730783Z",
+  "agent_execution_started_at": "2026-11-22T19:13:06.983682Z",
+  "agent_execution_finished_at": "2026-11-22T19:45:32.805294Z",
+  "agent_seconds": 1946
+ },
+ "usage": {
+  "input_tokens": 3547663,
+  "cached_input_tokens": 0,
+  "output_tokens": 199967,
+  "model_requests": 64
+ },
+ "trajectory": {
+  "steps": 66,
+  "agent_steps": 65,
+  "tool_call_steps": 64,
+  "stop_condition": "serve stop condition: done"
+ },
+ "grading": {
+  "run": "veriflow-ple-starter-artifacts-20261122-152143",
+  "method": "eval/run.py --artifacts on the exported deliverables; the live run's verifier container failed to start (evaluator RuntimeError), so the first score was unmeasured",
+  "score": 0.5434782608695652,
+  "weighted_points": 25.0,
+  "possible_weighted_points": 46.0
+ },
+ "final_message": {
+  "first_paragraph": "I've checked the memo to Callaway that was already saved at `Correspondence/Client/Memo_to_Callaway_2026-10-31.docx` and didn't change it. Every number in it matched when I recomputed it from the estimate, the plans, the HGL schedule and the County unit-cost schedule. It's dated 10/31/2026, signed out to you as preparer, and the file opens cleanly.",
+  "sha256": "7ec3daffae1c4a5e80bf43cdfadd91b08e159e42cb1660f6e1c4fff71bff2c0e"
+ }
+}

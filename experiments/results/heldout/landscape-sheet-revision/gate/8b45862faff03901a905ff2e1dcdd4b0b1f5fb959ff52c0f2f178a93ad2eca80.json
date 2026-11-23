@@ -1,0 +1,80 @@
+{
+ "task": "landscape-sheet-revision",
+ "arm": "gate",
+ "decision": "L3-c5",
+ "prompt_sha256": "8b45862faff03901a905ff2e1dcdd4b0b1f5fb959ff52c0f2f178a93ad2eca80",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 137818,
+  "inference_geo": "global",
+  "input_tokens": 948,
+  "output_tokens": 1364,
+  "output_tokens_details": {
+   "thinking_tokens": 454
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.0586356,
+ "latency_s": 13.6,
+ "effort": "medium",
+ "redacted": true,
+ "text_sha256": "47a33465320cc2bb2bace6f4368181cc1036c9f2e984472071594e0732e16321",
+ "text_chars": 2647,
+ "prose_outside_json": false,
+ "answer": {
+  "original": {
+   "value": "Enterprise Town Advisory Board (the trac… [withheld; sha256:aada4e50f44f]"
+  },
+  "proposed": {
+   "value": "Clark County Department of Comprehensive… [withheld; sha256:0e3196f65a63]"
+  },
+  "final": {
+   "value": "Clark County Department of Comprehensive… [withheld; sha256:a05d6d677f12]"
+  },
+  "changes_original": true,
+  "link": "direct",
+  "confidence": 0.8,
+  "governing_rules": [
+   {
+    "id": "R2",
+    "verbatim": true
+   }
+  ],
+  "evidence_verbatim": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "keep_or_flag_rules": [
+   {
+    "id": "R1",
+    "condition_met": false
+   }
+  ],
+  "scope_rules": [
+   {
+    "id": "R2",
+    "in_scope": true
+   },
+   {
+    "id": "R3",
+    "in_scope": true
+   }
+  ]
+ },
+ "verdicts": {
+  "proposed": true,
+  "original": false,
+  "final": true,
+  "flag": false
+ }
+}

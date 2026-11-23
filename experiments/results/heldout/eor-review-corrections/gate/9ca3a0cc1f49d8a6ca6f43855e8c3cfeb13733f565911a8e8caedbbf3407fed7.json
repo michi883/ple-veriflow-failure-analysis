@@ -1,0 +1,87 @@
+{
+ "task": "eor-review-corrections",
+ "arm": "gate",
+ "decision": "EOR-2-017",
+ "prompt_sha256": "9ca3a0cc1f49d8a6ca6f43855e8c3cfeb13733f565911a8e8caedbbf3407fed7",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 121649,
+  "inference_geo": "global",
+  "input_tokens": 5726,
+  "output_tokens": 998,
+  "output_tokens_details": {
+   "thinking_tokens": 270
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.0671938,
+ "latency_s": 9.5,
+ "effort": "medium",
+ "redacted": true,
+ "text_sha256": "1acc6930e41ee1aa446a3b30ebb9f1a9727ece80cf228427a8bfe369502cd37d",
+ "text_chars": 1749,
+ "prose_outside_json": true,
+ "answer": {
+  "original": "absent",
+  "proposed": {
+   "value": "do_not_incorporate"
+  },
+  "final": {
+   "value": "do_not_incorporate",
+   "_withheld_keys": [
+    "flag"
+   ]
+  },
+  "changes_original": true,
+  "link": "inferred",
+  "confidence": 0.75,
+  "governing_rules": [
+   {
+    "id": "R20",
+    "verbatim": true
+   },
+   {
+    "id": "R21",
+    "verbatim": true
+   },
+   {
+    "id": "R22",
+    "verbatim": true
+   }
+  ],
+  "evidence_verbatim": [
+   true,
+   true,
+   true
+  ],
+  "keep_or_flag_rules": [
+   {
+    "id": "R21",
+    "condition_met": true
+   },
+   {
+    "id": "R23",
+    "condition_met": false
+   }
+  ],
+  "scope_rules": [
+   {
+    "id": "R15",
+    "in_scope": true
+   }
+  ]
+ },
+ "verdicts": {
+  "proposed": true,
+  "original": null,
+  "final": true,
+  "flag": true
+ }
+}

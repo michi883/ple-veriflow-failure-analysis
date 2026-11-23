@@ -1,0 +1,65 @@
+{
+ "note": "Per-criterion outcome of the kit's LLM judge (claude-opus-5-5). Labels are ours; rubric text is gated.",
+ "criteria": [
+  {
+   "index": 0,
+   "label": "revised bond figure",
+   "weight": 10.0,
+   "passed": false
+  },
+  {
+   "index": 1,
+   "label": "corrected Section 2 subtotal",
+   "weight": 10.0,
+   "passed": false
+  },
+  {
+   "index": 2,
+   "label": "item 2.36 quantity",
+   "weight": 10.0,
+   "passed": true
+  },
+  {
+   "index": 3,
+   "label": "item 2.38 amount",
+   "weight": 10.0,
+   "passed": true
+  },
+  {
+   "index": 4,
+   "label": "item 2.03 amount",
+   "weight": 1.0,
+   "passed": true
+  },
+  {
+   "index": 5,
+   "label": "item 2.30 flagged, amount retained",
+   "weight": 1.0,
+   "passed": true
+  },
+  {
+   "index": 6,
+   "label": "memo addressed to the client",
+   "weight": 1.0,
+   "passed": true
+  },
+  {
+   "index": 7,
+   "label": "line-by-line table with sheet sources",
+   "weight": 1.0,
+   "passed": true
+  },
+  {
+   "index": 8,
+   "label": "memo date",
+   "weight": 1.0,
+   "passed": true
+  },
+  {
+   "index": 9,
+   "label": "access ramp flagged as unmatched",
+   "weight": 1.0,
+   "passed": false
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "task": "landscape-sheet-revision",
+ "note": "Decision ids with our own short topic labels. The full question texts follow the wording of the task's grading data, so they are withheld with the rest of tests.json.",
+ "answer_format": "Answer this one decision only. Reply with one JSON object and nothing else:\n{\"value\": <the answer, in the form the decision asks for>, \"confidence\": <0.0 to 1.0>, \"evidence\": \"<the decisive evidence, quoted verbatim, at most 30 words>\"}",
+ "gate_fields": "Decision objects have the form {\"value\": <the answer, in the form the decision asks for>}.",
+ "decisions": [
+  {
+   "id": "L1-c11",
+   "topic": "can the resubmittal date be committed to now (yes / no)"
+  },
+  {
+   "id": "L2-c4",
+   "topic": "has a significant-change determination been issued (yes / no)"
+  },
+  {
+   "id": "L3-c5",
+   "topic": "which party makes that determination (name)"
+  },
+  {
+   "id": "L4-c0",
+   "topic": "which approval condition governs staff-level action (number)"
+  },
+  {
+   "id": "L5-c7",
+   "topic": "closing date of an advisory-board application window (date)"
+  },
+  {
+   "id": "L6-c8",
+   "topic": "next available advisory-board meeting (date)"
+  },
+  {
+   "id": "L7-c13",
+   "topic": "street trees shown on the current sheets (count)"
+  },
+  {
+   "id": "L8-c14",
+   "topic": "street trees the spacing standard requires (count)"
+  },
+  {
+   "id": "L9-c15",
+   "topic": "must the revised planting plan be sealed (yes / no)"
+  }
+ ]
+}

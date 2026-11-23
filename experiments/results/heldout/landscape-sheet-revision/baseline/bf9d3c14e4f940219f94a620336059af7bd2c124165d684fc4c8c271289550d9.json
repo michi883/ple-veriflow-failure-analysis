@@ -1,0 +1,38 @@
+{
+ "task": "landscape-sheet-revision",
+ "arm": "baseline",
+ "decision": "L3-c5",
+ "prompt_sha256": "bf9d3c14e4f940219f94a620336059af7bd2c124165d684fc4c8c271289550d9",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 137818,
+  "inference_geo": "global",
+  "input_tokens": 136,
+  "output_tokens": 284,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.03378760000000001,
+ "latency_s": 3.5,
+ "effort": "medium",
+ "redacted": true,
+ "text_sha256": "3a37486c7d96a46e199eb7a1a7426ac50d82855596ab280c97810be9c2a80968",
+ "text_chars": 916,
+ "prose_outside_json": true,
+ "answer": {
+  "value": "Clark County Department of Comprehensive… [withheld; sha256:c29fdfd46ead]",
+  "confidence": 0.8
+ },
+ "verdicts": {
+  "answer": true
+ }
+}

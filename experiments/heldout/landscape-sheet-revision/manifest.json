@@ -1,0 +1,43 @@
+{
+ "sources": {
+  "landscape-sheet-revision/instruction.md": "ac890a3fb52237cd62fe03999b9cb7c4ff46a577994146b7e37729de1b52ca30",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/CC-PW_1stReview_Comments_10092026.pdf": "b1f23f2e399333bfb04fbc060af45ee495fdbef8e2bebe94550825e1e8df5ab0",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/CC-PW_Ph2_Acceptance_032025.pdf": "541902e75a8317c806e0e1ca1f6421379d2e896c441bf63337d2326ce404bcaf",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/CC-PW_Ph2_Comments_1st_2nd.pdf": "2b18daab2fd351d166e5b68ac811452bff258e9fea25fee475f7382a12803308",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/CCFD_Ph2_Access_Approval.pdf": "1720fe6fc8f690ff0b86c7107568538afb059d3a0ec346d663370b42dff0249c",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/DSR_ExtensionOfTime_request_and_response.pdf": "8f65278d26413684ac165860012849af9685dfe4fab25aa3322483a75d36331d",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/DSR_Ph2_Comment_Response_Matrix.xlsx": "905d5f715f273b6a15c4321f69231c6621daba50f7f3894fb28323145c880adc",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/DSR_Ph2_County_Inspection_Reports.pdf": "be6efb66de559b8b700d32565fc9346716b1c1c4f6a6f7f7fb3f600defb3cdc4",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/DSR_Ph3_Transmittal_Clearance_Log.xlsx": "1741313d4e44fa172d96d8264266bde8d4620ab4c6afda6274a1e44b5b05c5da",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/FCD_MDS_Acceptance_Letter.pdf": "d6250c88cce1d925a263341da59945ce12759504a0f5dd3663ae1bc73ec5de74",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/RE_DSR_tentative_map_status_thread.eml": "02f3773272728827561b9e6e68d53a10d4ee0f135cf1a9298043947b42ba6a75",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/SewerCapacity_Confirmation_09302025.pdf": "e36adc8c74ead3f1feadb1695680d934f0d494d84350f179a4dedbe478864fbf",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/TM-22-500041_Conditions_of_Approval_03142022.pdf": "f1a82261babfa595283a50c33f35ac46a2aa28ce4246bd506d6cc5b46492dc59",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/TM-22-500041_DetailedTeamReview_draft_conditions.pdf": "c978c92641c8f3820362bb6c510c78ba89a5896293414ebe5f5c40261e63ae65",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Agency/WillServe_Water_07222026.pdf": "671e4b28def92a9165ec01a755ff2833609e4a57dc2e904d9b8a82673333c4f2",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Client/Callaway_counsel_turf_exemption.eml": "1e44f5ff365051840f748827ec0cc8616318649187a125683f5db3f3fbf4b1f8",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Client/DSR_HOA_park_landscape_letter.pdf": "266867b33eab000c3dd7d1c0d9356908bbbe13793f3206ef2b3b926b6c35adfa",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Client/Nokes_redline_and_resubmit.eml": "7de0a05d53565517bc9d70e5a5972f232ce85fc721d928403c4fa574dcf97152",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/Client/Title_officer_map_runway.eml": "623e748852bec04caa48f950cf4abf41322bf90d2c94cf4d5cb0b83c014e62af",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/DSR_Ph3_Resubmittal_Tracker.xlsx": "81bfc9b10aa5dc60e62db153c69339e9cb856daa3a546a0dca40e6104f5eae52",
+  "landscape-sheet-revision/environment/filesystem/Correspondence/DSR_Ph3_internal_design_coordination.eml": "a17660e11a34a01bfacce20d6d2166c00b9a86bc22035118010cac548bb0b656",
+  "landscape-sheet-revision/environment/filesystem/Design-Drafting/Landscape/DSR_Ph1-2_Landscape_APPROVED_2022.pdf": "65869bb895df4cf00786b73d5de3b40b705c0301ed2fafde1d8d0f7948d09db1",
+  "landscape-sheet-revision/environment/filesystem/Design-Drafting/Landscape/DSR_Ph3_Landscape_L1-L4.pdf": "b4f1fc211c93442da7361ae08c6f3872eba7ac767c1f7ed825ba992ec46920d7",
+  "landscape-sheet-revision/environment/filesystem/Design-Drafting/Landscape/DSR_Ph3_Turf_Planting_Tabulation.xlsx": "8b7ab162e1b97003473bbcad284bef694382db194814f89410af964bf740cc15",
+  "landscape-sheet-revision/environment/filesystem/Reference/CC_Map_Amendment_and_Vacation_Procedures.pdf": "dc1ce88e918bc9b60301b23fcb6544b11f1ceb0de9d88dfcf7097a94c290aba3",
+  "landscape-sheet-revision/environment/filesystem/Reference/CC_Shade_Canopy_Guidance.pdf": "dd80162ec1c2f5e2fef7827153f072c33ee374162f9fa8920622393484e47264",
+  "landscape-sheet-revision/environment/filesystem/Reference/FunctionalTurf_Compliance_Bulletin.pdf": "3629b664d9552ad8ca36158486987495d216f6cd27d46ec4b683f2d647a7d8ef",
+  "landscape-sheet-revision/environment/filesystem/Reference/Title/DSR_Ph3_Preliminary_Title_Report.pdf": "abc25d6f30334bcc4da0dc46c90d0febf5eb890801c91710a9cd1f087b1bb9c2",
+  "landscape-sheet-revision/environment/filesystem/Meeting Notes/DSR_Ph2_Precon_Meeting_Notes.docx": "3df2c91d29e30c2fa1f09c9b0e0b83e25e6175b8dfecc6ee6fc932fe245cf499",
+  "landscape-sheet-revision/environment/filesystem/Meeting Notes/DSR_Ph3_PreApp_Meeting_Notes.docx": "90a837cc4d85e883878f8d99ac819ce2106a4d5f66cb870a06f3e8c5ff3b838a",
+  "landscape-sheet-revision/environment/filesystem/Meeting Notes/DSR_Ph3_Weekly_Meeting_Notes.docx": "6aab701ce79a61fbf3ac6e2731bb465aaa715f4b7a3ccc42aef27fd806499f84",
+  "landscape-sheet-revision/environment/filesystem/Meeting Notes/EnterpriseTAB_Calendar_Agenda.pdf": "9226cac53b803a3f443ef48f414321fe3850412e9b7835a297fb86e0309d2eae",
+  "landscape-sheet-revision/tests/grader/criteria.json": "ae8909f3eff4f26a331bd74f451f3e9ca571e39cca71608f818d85c0b7bbb3da"
+ },
+ "outputs": {
+  "instruction.txt": "ac890a3fb52237cd62fe03999b9cb7c4ff46a577994146b7e37729de1b52ca30",
+  "packet.txt": "09cfa01a780a365e56507c84d382d6e6d092dc221deb10aa81cd7047146d9b3d",
+  "tests.json": "aed6748ef3eb01336b96cfcd272d45177126038fdda31dc7ed0c7b1e27629f14",
+  "oracle.json": "c5519dc9993af233c0e0419809c2f71efa347329cc30afc34c7d82714c3af521"
+ }
+}

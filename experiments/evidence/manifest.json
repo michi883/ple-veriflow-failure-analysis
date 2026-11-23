@@ -1,0 +1,33 @@
+{
+  "sources": {
+    "instruction": {
+      "path": "ple-kit/runs/veriflow-ple-starter-20261122-131754/tasks/engineers-estimate-check/instruction.md",
+      "sha256": "51e2741a4c57b4227d973c5511a1f709acbb8c68e6619d142e0e5da42af12b0c"
+    },
+    "estimate": {
+      "path": "ple-kit/runs/veriflow-ple-starter-20261122-131754/tasks/engineers-estimate-check/environment/files/Cost Estimates/DSR_Ph3_Engineers_Estimate.xlsx",
+      "sha256": "d3c26a205f7a9350773f618de5c0d12758ca560a734d28b8b1a30f4ec3d1e1c8"
+    },
+    "schedule": {
+      "path": "ple-kit/runs/veriflow-ple-starter-20261122-131754/tasks/engineers-estimate-check/environment/files/Cost Estimates/CC_Unit_Cost_Schedule.pdf",
+      "sha256": "9aef55f3559e2ede51bc5825658948817d1ab52e198e96536c6c15832d56cb87"
+    },
+    "plans": {
+      "path": "ple-kit/runs/veriflow-ple-starter-20261122-131754/tasks/engineers-estimate-check/environment/files/Design-Drafting/Phase 3/DSR_Ph3_Improvement_Plans_C1-C9.pdf",
+      "sha256": "17b2783d497e3676e65097291286ef11a2d21e7d9915eb9e2e16c3c38323c15e"
+    },
+    "hgl": {
+      "path": "ple-kit/runs/veriflow-ple-starter-20261122-131754/tasks/engineers-estimate-check/environment/files/Reports-Studies/DSR_Ph3_StormDrain_HGL.xlsx",
+      "sha256": "687a5520ab52455d6aecfc7da5920734df8de94d3cdc57959cea77a52566d629"
+    },
+    "veriflow_memo": {
+      "path": "veriflow-ple-starter/artifacts/engineers-estimate-check/files/filesystem/Correspondence/Client/Memo_to_Callaway_2026-10-31.docx",
+      "sha256": "c38ea34c4c55e27648f083943ca6971186945aba8e9806cc8477defc8913f3fd"
+    }
+  },
+  "outputs": {
+    "instruction.txt": "5fc249ba96b8a04d79d8c890fbebae3f5ef2c6c3a5fd06edcd4d9a137f00af44",
+    "packet.txt": "2b1b4ae9c64453301ef833766166f65f80d4dbfb127ed12bc006d070c537bfd6",
+    "veriflow_decisions.json": "42fbb95ace4062503d618e02f679db1017eeda7ca95892c3865974d6a8d73994"
+  }
+}

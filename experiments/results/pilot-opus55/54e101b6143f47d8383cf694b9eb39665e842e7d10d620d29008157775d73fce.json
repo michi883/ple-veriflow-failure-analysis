@@ -1,0 +1,40 @@
+{
+ "decision": "D1-2.35",
+ "test": "invariance",
+ "prompt_sha256": "54e101b6143f47d8383cf694b9eb39665e842e7d10d620d29008157775d73fce",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "inference_geo": "global",
+  "input_tokens": 23156,
+  "output_tokens": 1095,
+  "output_tokens_details": {
+   "thinking_tokens": 634
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.114524,
+ "latency_s": 9.9,
+ "effort": "medium",
+ "max_tokens": 12000,
+ "redacted": true,
+ "text_sha256": "8da8423f953b6a9f3ec2c9a34fda18cca25024c655d17df56fab71378f6da4ed",
+ "text_chars": 973,
+ "prose_outside_json": false,
+ "answer": {
+  "treatment": "carry",
+  "schedule_item": "2.36",
+  "quantity": 10,
+  "unit": "EA",
+  "unit_price": 8750.0,
+  "amount": 87500.0,
+  "confidence": 0.72
+ }
+}

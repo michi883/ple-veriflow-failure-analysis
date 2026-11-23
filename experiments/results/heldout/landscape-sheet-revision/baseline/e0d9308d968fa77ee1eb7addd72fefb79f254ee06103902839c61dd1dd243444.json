@@ -1,0 +1,38 @@
+{
+ "task": "landscape-sheet-revision",
+ "arm": "baseline",
+ "decision": "L6-c8",
+ "prompt_sha256": "e0d9308d968fa77ee1eb7addd72fefb79f254ee06103902839c61dd1dd243444",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 137818,
+  "inference_geo": "global",
+  "input_tokens": 151,
+  "output_tokens": 190,
+  "output_tokens_details": {
+   "thinking_tokens": 72
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.0319676,
+ "latency_s": 5.5,
+ "effort": "medium",
+ "redacted": true,
+ "text_sha256": "a58d0e21a3f1bfdb47fa800ba26a19e14037cfc3570731072c11bcf9f4c6b223",
+ "text_chars": 214,
+ "prose_outside_json": false,
+ "answer": {
+  "value": "12/16/2026",
+  "confidence": 0.85
+ },
+ "verdicts": {
+  "answer": true
+ }
+}

@@ -1,0 +1,244 @@
+{
+ "task": "engineers-estimate-check",
+ "note": "Public form of cases/tests.json. Questions and descriptions are ours. The literal anchor strings of each evidence operation quote the gated task files, so only the operation type and a hash of the operation are published.",
+ "answer_format": "Answer this one decision only. Reply with one JSON object and nothing else:\n{\"treatment\": \"carry\" | \"flag_no_schedule_match\" | \"exclude\",\n \"schedule_item\": \"<schedule item number the quantity is carried under, or null>\",\n \"quantity\": <quantity of this item that the reconciled Section 2 subtotal carries; 0 if none>,\n \"unit\": \"<unit>\",\n \"unit_price\": <number or null>,\n \"amount\": <number or null>,\n \"confidence\": <0.0 to 1.0>,\n \"evidence\": \"<the decisive evidence, quoted verbatim, at most 30 words>\"}",
+ "decisions": [
+  {
+   "id": "D1-2.35",
+   "compare": "quantity",
+   "question": "Estimate item 2.35 (Storm drain manhole, 48-inch dia., depth ≤ 8 ft) is carried at 14 EA. What quantity of item 2.35 should the reconciled Section 2 subtotal carry?",
+   "invariance": {
+    "description": "Swap the order of two C-8 Storm Drain Design Notes (manhole note and curb-inlet note).",
+    "ops": [
+     {
+      "op": "swap",
+      "sha256": "30de7ab1ab27f35bbedc5b6c5d99df84becfc278e7555f8e79a78c2daefad244"
+     }
+    ]
+   },
+   "sensitivity": {
+    "description": "C-8 manhole diameter changed from 5-foot to 4-foot (Design Note and S-1 type).",
+    "ops": [
+     {
+      "op": "replace",
+      "sha256": "35229ef01a57580e71b6a06a3d2b2fc86d55c1c6df357aa7bc6d8ac9936b1d41"
+     },
+     {
+      "op": "replace",
+      "sha256": "8f0791abd94c9e462bbe37eab4befba71495ede5c56123bbf54bab778b6bf03e"
+     }
+    ]
+   }
+  },
+  {
+   "id": "D2-2.36",
+   "compare": "quantity",
+   "question": "What quantity of schedule item 2.36 (Storm drain manhole, 60-inch dia., depth ≤ 10 ft) should the reconciled Section 2 subtotal carry?",
+   "invariance": {
+    "description": "Swap the two row groups of the C-8 Structure Schedule (S-1..S-4 after S-5..S-14).",
+    "ops": [
+     {
+      "op": "swap",
+      "sha256": "01085f5c887954501054f6febc8ae2c295509ff53a769389d72afc4a5c9c39e2"
+     }
+    ]
+   },
+   "sensitivity": {
+    "description": "C-8 S-7 changed from a junction manhole to a cast-in-place junction structure.",
+    "ops": [
+     {
+      "op": "replace",
+      "sha256": "229e67895288ea7c1f599a66010f5f439ac6c97809928524b056f1995cf8fb27"
+     },
+     {
+      "op": "replace",
+      "sha256": "2a6b3433592dd376e91a9f901af9eb1bdf73bed145583b60b1fc1f2ba58f7112"
+     }
+    ]
+   }
+  },
+  {
+   "id": "D3-2.38",
+   "compare": "quantity",
+   "question": "What quantity of schedule item 2.38 (Storm drain manhole additional depth beyond schedule, per foot) should the reconciled Section 2 subtotal carry?",
+   "invariance": {
+    "description": "Drop thousands separators from the elevations in the C-8 Structure Schedule.",
+    "ops": [
+     {
+      "op": "regex",
+      "sha256": "11d50334bcc013693c341ba2e0183e6e63f78755441409f25728f3b588dc1a14"
+     }
+    ]
+   },
+   "sensitivity": {
+    "description": "C-8 S-14 rim elevation raised by 1.00 ft (2,872.10 to 2,873.10).",
+    "ops": [
+     {
+      "op": "replace",
+      "sha256": "a3f8e0be69fef920cc37955b6b7d3477697ab228f53f0b6f2311689bc2a41050"
+     }
+    ]
+   }
+  },
+  {
+   "id": "D4-2.03",
+   "compare": "quantity",
+   "question": "What quantity of schedule item 2.03 (30-inch RCP) should the reconciled Section 2 subtotal carry?",
+   "invariance": {
+    "description": "Swap the order of two C-9 Section A-A′ callouts (outlet structure and 30″ RCP).",
+    "ops": [
+     {
+      "op": "swap",
+      "sha256": "ed115a4e66b0e42784fa575225c11985de67fd296fc79348549d3ae749668085"
+     }
+    ]
+   },
+   "sensitivity": {
+    "description": "Existing outfall stub invert lowered from 2,850.75 to 2,850.50 (C-6 and C-9).",
+    "ops": [
+     {
+      "op": "replace",
+      "sha256": "937f45d942a36440216e6e098ec9ed8c29d34a849a8fe5e106f07b7bca8b279f"
+     }
+    ]
+   }
+  },
+  {
+   "id": "W1-2.06",
+   "compare": "quantity",
+   "question": "What quantity of schedule item 2.06 (48-inch RCP) should the reconciled Section 2 subtotal carry?",
+   "invariance": {
+    "description": "Swap the order of HGL Pipe Schedule rows R5 and R6.",
+    "ops": [
+     {
+      "op": "swap",
+      "sha256": "5653e2d3ca8f2939f78409b49644f78032b01716b5ae101a9a82ef8c7e98c7cf"
+     }
+    ]
+   },
+   "sensitivity": {
+    "description": "S-8 moved 4.00 ft downstream: station 15+56.09 to 15+60.09 everywhere; HGL R7 +4.00 LF, R8 -4.00 LF.",
+    "ops": [
+     {
+      "op": "replace",
+      "sha256": "0a41d82feaf480c84454626c418aed7567b01446f4f3ae255b0615c79b6c342f"
+     },
+     {
+      "op": "replace",
+      "sha256": "0dd1d33c63f7cb44b2f9f77f15af6f9454545834279dc219a36cda1f461484c1"
+     },
+     {
+      "op": "replace",
+      "sha256": "81beae3285999466c14cdcd1980c01563df85737c86cf02ddff3b2d3ca10efa1"
+     }
+    ],
+    "criterion": "delta"
+   }
+  },
+  {
+   "id": "W2-2.08",
+   "compare": "quantity",
+   "question": "What quantity of schedule item 2.08 (60-inch RCP) should the reconciled Section 2 subtotal carry?",
+   "invariance": {
+    "description": "Swap the order of HGL Pipe Schedule rows R9 and R10.",
+    "ops": [
+     {
+      "op": "swap",
+      "sha256": "0f42d36d0f8734faade96985849e36e4bfb3593f5046ede20b14e026bc8984c3"
+     }
+    ]
+   },
+   "sensitivity": {
+    "description": "S-8 moved 4.00 ft downstream: station 15+56.09 to 15+60.09 everywhere; HGL R7 +4.00 LF, R8 -4.00 LF.",
+    "ops": [
+     {
+      "op": "replace",
+      "sha256": "0a41d82feaf480c84454626c418aed7567b01446f4f3ae255b0615c79b6c342f"
+     },
+     {
+      "op": "replace",
+      "sha256": "0dd1d33c63f7cb44b2f9f77f15af6f9454545834279dc219a36cda1f461484c1"
+     },
+     {
+      "op": "replace",
+      "sha256": "81beae3285999466c14cdcd1980c01563df85737c86cf02ddff3b2d3ca10efa1"
+     }
+    ],
+    "criterion": "delta"
+   }
+  },
+  {
+   "id": "W3-2.44",
+   "compare": "quantity",
+   "question": "What quantity of schedule item 2.44 (Detention basin excavation) should the reconciled Section 2 subtotal carry?",
+   "invariance": {
+    "description": "Drop thousands separators from every number in the estimate's Section 2 table.",
+    "ops": [
+     {
+      "op": "regex",
+      "sha256": "6ab52468a7089ac7030758d1d3ea490275dcae6fe936d3f255b87bfadea350a7"
+     }
+    ]
+   },
+   "sensitivity": {
+    "description": "C-9 Basin Notes gain an explicit excavation quantity: 11,200 CY.",
+    "ops": [
+     {
+      "op": "replace",
+      "sha256": "47292489fd07c361aa529003a8999142c5f508297f75d6343ac3b29a8a71a8c5"
+     }
+    ]
+   }
+  },
+  {
+   "id": "W4-ramp",
+   "compare": "treatment_item",
+   "question": "How should the detention basin access ramp shown on the plans be handled in the Section 2 reconciliation?",
+   "invariance": {
+    "description": "Swap the order of the first two C-9 Access Ramp detail callouts.",
+    "ops": [
+     {
+      "op": "swap",
+      "sha256": "13273bb30192412b5b5e9bfc6b4f7374e479451c04fc4d0fa3cafaf57309ccc4"
+     }
+    ]
+   },
+   "sensitivity": {
+    "description": "Ramp surface changed to 4-inch AC over 6-inch aggregate base (C-6 note and C-9 detail).",
+    "ops": [
+     {
+      "op": "replace",
+      "sha256": "c5a9eead32574d23ba97537da612038e6f20c11189df331e8facfb568260f6c2"
+     },
+     {
+      "op": "replace",
+      "sha256": "7fe7001c0aae093fbbba58b98d1a02a2022237dc44699bc8f723e1a9f62b00f9"
+     }
+    ]
+   }
+  },
+  {
+   "id": "W5-path",
+   "compare": "treatment_item",
+   "question": "How should the perimeter maintenance path at the top of the north berm be handled in the Section 2 reconciliation?",
+   "invariance": {
+    "description": "Swap the order of two C-9 Section B-B′ callouts (topsoil/hydroseed and maintenance path).",
+    "ops": [
+     {
+      "op": "swap",
+      "sha256": "5f413bdac1de3692628b49202b0c4516f51e428e118b6381241063fcefeeb066"
+     }
+    ]
+   },
+   "sensitivity": {
+    "description": "Schedule Section 2 gains item 2.48, Maintenance path, 12-ft wide, 6-inch aggregate base, SY, $11.40.",
+    "ops": [
+     {
+      "op": "replace",
+      "sha256": "4c1c0cd2573c6cc0aef57b9d609798e319af51a6b390480a97bb41bb0d4e5b55"
+     }
+    ]
+   }
+  }
+ ]
+}

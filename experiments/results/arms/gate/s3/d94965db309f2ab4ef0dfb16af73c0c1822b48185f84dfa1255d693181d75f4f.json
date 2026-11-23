@@ -1,0 +1,90 @@
+{
+ "decision": "W5-path",
+ "test": "baseline",
+ "prompt_sha256": "d94965db309f2ab4ef0dfb16af73c0c1822b48185f84dfa1255d693181d75f4f",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 22848,
+  "inference_geo": "global",
+  "input_tokens": 1261,
+  "output_tokens": 1386,
+  "output_tokens_details": {
+   "thinking_tokens": 325
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.0373336,
+ "latency_s": 12.3,
+ "effort": "medium",
+ "max_tokens": 12000,
+ "arm": "gate",
+ "redacted": true,
+ "text_sha256": "604120f5eaa8fc131a3bb5d48da824b8f38880fd4f4aaee9881061f32b56ad05",
+ "text_chars": 2640,
+ "prose_outside_json": false,
+ "answer": {
+  "original": "absent",
+  "proposed": {
+   "treatment": "carry",
+   "schedule_item": "3.05 Aggregate base course, Type II, 6-i… [withheld; sha256:d49899fe6b3e]",
+   "quantity": 391,
+   "unit": "SY",
+   "unit_price": 9.25,
+   "amount": 3617.0
+  },
+  "final": {
+   "treatment": "flag_no_schedule_match",
+   "schedule_item": null,
+   "quantity": 0,
+   "unit": "SY",
+   "unit_price": null,
+   "amount": 0
+  },
+  "changes_original": true,
+  "link": "inferred",
+  "confidence": 0.8,
+  "governing_rules": [
+   {
+    "id": "R4",
+    "verbatim": true
+   },
+   {
+    "id": "R6",
+    "verbatim": true
+   }
+  ],
+  "evidence_verbatim": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "keep_or_flag_rules": [
+   {
+    "id": "R6",
+    "condition_met": true
+   },
+   {
+    "id": "R7",
+    "condition_met": false
+   },
+   {
+    "id": "R5",
+    "condition_met": false
+   }
+  ],
+  "scope_rules": [
+   {
+    "id": "R4",
+    "in_scope": false
+   }
+  ]
+ }
+}

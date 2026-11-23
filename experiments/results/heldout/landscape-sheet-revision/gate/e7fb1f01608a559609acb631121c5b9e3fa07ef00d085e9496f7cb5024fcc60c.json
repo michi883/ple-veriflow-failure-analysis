@@ -1,0 +1,91 @@
+{
+ "task": "landscape-sheet-revision",
+ "arm": "gate",
+ "decision": "L1-c11",
+ "prompt_sha256": "e7fb1f01608a559609acb631121c5b9e3fa07ef00d085e9496f7cb5024fcc60c",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 137818,
+  "inference_geo": "global",
+  "input_tokens": 957,
+  "output_tokens": 2073,
+  "output_tokens_details": {
+   "thinking_tokens": 655
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.0728516,
+ "latency_s": 17.6,
+ "effort": "medium",
+ "redacted": true,
+ "text_sha256": "bdd25764876b6e014fb8a1e699a2e44f0ff9ce1bebde6531a69cd7936d63e67e",
+ "text_chars": 3739,
+ "prose_outside_json": false,
+ "answer": {
+  "original": "absent",
+  "proposed": {
+   "value": "no"
+  },
+  "final": {
+   "value": "no",
+   "_withheld_keys": [
+    "flag"
+   ]
+  },
+  "changes_original": true,
+  "link": "inferred",
+  "confidence": 0.72,
+  "governing_rules": [
+   {
+    "id": "R1",
+    "verbatim": true
+   },
+   {
+    "id": "R2",
+    "verbatim": true
+   }
+  ],
+  "evidence_verbatim": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "keep_or_flag_rules": [
+   {
+    "id": "R2",
+    "condition_met": true
+   }
+  ],
+  "scope_rules": [
+   {
+    "id": "R1",
+    "in_scope": true
+   },
+   {
+    "id": "R3",
+    "in_scope": true
+   }
+  ]
+ },
+ "verdicts": {
+  "proposed": true,
+  "original": null,
+  "final": true,
+  "flag": false
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "task": "eor-review-corrections",
+ "note": "Decision ids with our own short topic labels. The full question texts follow the wording of the task's grading data, so they are withheld with the rest of tests.json.",
+ "answer_format": "Answer this one decision only. Reply with one JSON object and nothing else:\n{\"value\": <the answer, in the form the decision asks for>, \"confidence\": <0.0 to 1.0>, \"evidence\": \"<the decisive evidence, quoted verbatim, at most 30 words>\"}",
+ "gate_fields": "Decision objects have the form {\"value\": <the answer, in the form the decision asks for>}.",
+ "decisions": [
+  {
+   "id": "EOR-2-001",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-004",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-006",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-009",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-011",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-013",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-015",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-017",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-019",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-021",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-023",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-025",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-027",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-029",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-031",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  },
+  {
+   "id": "EOR-2-033",
+   "topic": "one review comment: is it incorporated as a change to the drawings in this issue, or not"
+  }
+ ]
+}

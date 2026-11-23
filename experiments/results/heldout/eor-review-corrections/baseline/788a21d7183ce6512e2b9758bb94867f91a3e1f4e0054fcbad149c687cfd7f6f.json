@@ -1,0 +1,38 @@
+{
+ "task": "eor-review-corrections",
+ "arm": "baseline",
+ "decision": "EOR-2-017",
+ "prompt_sha256": "788a21d7183ce6512e2b9758bb94867f91a3e1f4e0054fcbad149c687cfd7f6f",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 121649,
+  "inference_geo": "global",
+  "input_tokens": 174,
+  "output_tokens": 229,
+  "output_tokens_details": {
+   "thinking_tokens": 93
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.0296058,
+ "latency_s": 3.5,
+ "effort": "medium",
+ "redacted": true,
+ "text_sha256": "8f04f4c4c77118108356fb58870b18fa5c7177c8883a56976f462f0d207c6204",
+ "text_chars": 256,
+ "prose_outside_json": false,
+ "answer": {
+  "value": "do_not_incorporate",
+  "confidence": 0.8
+ },
+ "verdicts": {
+  "answer": true
+ }
+}

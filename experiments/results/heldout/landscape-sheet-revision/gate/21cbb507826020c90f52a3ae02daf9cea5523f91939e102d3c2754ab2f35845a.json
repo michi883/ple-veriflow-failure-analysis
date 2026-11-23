@@ -1,0 +1,66 @@
+{
+ "task": "landscape-sheet-revision",
+ "arm": "gate",
+ "decision": "L5-c7",
+ "prompt_sha256": "21cbb507826020c90f52a3ae02daf9cea5523f91939e102d3c2754ab2f35845a",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 137818,
+  "inference_geo": "global",
+  "input_tokens": 970,
+  "output_tokens": 385,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.03914360000000001,
+ "latency_s": 3.2,
+ "effort": "medium",
+ "redacted": true,
+ "text_sha256": "86602d6bc80841dd1ebd90af5943db59117cb166481f8ee881f252db18bb88cc",
+ "text_chars": 982,
+ "prose_outside_json": false,
+ "answer": {
+  "original": "absent",
+  "proposed": {
+   "value": "10/28/2026"
+  },
+  "final": {
+   "value": "10/28/2026"
+  },
+  "changes_original": true,
+  "link": "direct",
+  "confidence": 0.93,
+  "governing_rules": [
+   {
+    "id": "R2",
+    "verbatim": true
+   }
+  ],
+  "evidence_verbatim": [
+   true,
+   true
+  ],
+  "keep_or_flag_rules": [],
+  "scope_rules": [
+   {
+    "id": "R2",
+    "in_scope": true
+   }
+  ]
+ },
+ "verdicts": {
+  "proposed": true,
+  "original": null,
+  "final": true,
+  "flag": false
+ }
+}

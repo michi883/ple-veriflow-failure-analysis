@@ -1,0 +1,101 @@
+[
+  {
+    "item": "2.06",
+    "description": "48-inch RCP (S-5 to S-8)",
+    "carried_qty": 687.0,
+    "corrected_qty": 685.0,
+    "unit": "LF",
+    "unit_price": 258.0,
+    "corrected_amount": 176730.0,
+    "change": "−$516",
+    "arithmetic_check": "pass"
+  },
+  {
+    "item": "2.08",
+    "description": "60-inch RCP (S-8 to S-14 + Line B)",
+    "carried_qty": 1334.0,
+    "corrected_qty": 1335.0,
+    "unit": "LF",
+    "unit_price": 372.0,
+    "corrected_amount": 496620.0,
+    "change": "+$372",
+    "arithmetic_check": "pass"
+  },
+  {
+    "item": "2.35",
+    "description": "Storm drain manhole, 48-inch dia., depth ≤ 8 ft",
+    "carried_qty": 14.0,
+    "corrected_qty": 0.0,
+    "unit": "EA",
+    "unit_price": 6400.0,
+    "corrected_amount": 0.0,
+    "change": "−$89,600",
+    "arithmetic_check": "pass"
+  },
+  {
+    "item": "2.36",
+    "description": "Storm drain manhole, 60-inch dia., depth ≤ 10 ft (NEW)",
+    "carried_qty": 0.0,
+    "corrected_qty": 10.0,
+    "unit": "EA",
+    "unit_price": 8750.0,
+    "corrected_amount": 87500.0,
+    "change": "+$87,500",
+    "arithmetic_check": "pass"
+  },
+  {
+    "item": "2.38",
+    "description": "SD manhole additional depth beyond schedule (NEW)",
+    "carried_qty": 0.0,
+    "corrected_qty": 22.02,
+    "unit": "VF",
+    "unit_price": 685.0,
+    "corrected_amount": 15084.0,
+    "change": "+$15,084",
+    "arithmetic_check": "pass"
+  },
+  {
+    "item": "2.44",
+    "description": "Detention basin excavation (6.4 ac-ft allocation)",
+    "carried_qty": 10000.0,
+    "corrected_qty": 10326.0,
+    "unit": "CY",
+    "unit_price": 9.75,
+    "corrected_amount": 100679.0,
+    "change": "+$3,179",
+    "arithmetic_check": "pass"
+  },
+  {
+    "item": "2.03",
+    "description": "30-inch RCP, outlet structure to existing outfall stub (NEW)",
+    "carried_qty": 0.0,
+    "corrected_qty": 100.0,
+    "unit": "LF",
+    "unit_price": 138.0,
+    "corrected_amount": 13800.0,
+    "change": "+$13,800",
+    "arithmetic_check": "pass"
+  },
+  {
+    "item": "3.05",
+    "description": "Basin access ramp, 6-inch aggregate base course (NEW)",
+    "carried_qty": 0.0,
+    "corrected_qty": 227.78,
+    "unit": "SY",
+    "unit_price": 9.25,
+    "corrected_amount": 2107.0,
+    "change": "+$2,107",
+    "arithmetic_check": "pass"
+  },
+  {
+    "item": "3.05",
+    "description": "Basin maintenance path, 12-ft, 6-inch aggregate base (NEW)",
+    "carried_qty": 0.0,
+    "corrected_qty": 390.67,
+    "unit": "SY",
+    "unit_price": 9.25,
+    "corrected_amount": 3614.0,
+    "change": "+$3,614",
+    "arithmetic_check": "pass"
+  }
+]

@@ -1,0 +1,88 @@
+{
+ "task": "eor-review-corrections",
+ "arm": "gate",
+ "decision": "EOR-2-025",
+ "prompt_sha256": "815db87d0374e98d2f2fd5ed86639f75bedd9e554b93747f5e125937f7d85f81",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 121649,
+  "inference_geo": "global",
+  "input_tokens": 5726,
+  "output_tokens": 1573,
+  "output_tokens_details": {
+   "thinking_tokens": 378
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.07869380000000001,
+ "latency_s": 15.1,
+ "effort": "medium",
+ "redacted": true,
+ "text_sha256": "939b6f4c50adac5267953eaace6f59ac0440562bb9ea307f585abcc5de7cbff7",
+ "text_chars": 2975,
+ "prose_outside_json": false,
+ "answer": {
+  "original": "absent",
+  "proposed": {
+   "value": "incorporate"
+  },
+  "final": {
+   "value": "incorporate"
+  },
+  "changes_original": true,
+  "link": "direct",
+  "confidence": 0.85,
+  "governing_rules": [
+   {
+    "id": "R23",
+    "verbatim": true
+   },
+   {
+    "id": "R21",
+    "verbatim": true
+   }
+  ],
+  "evidence_verbatim": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "keep_or_flag_rules": [
+   {
+    "id": "R22",
+    "condition_met": false
+   },
+   {
+    "id": "R24",
+    "condition_met": false
+   }
+  ],
+  "scope_rules": [
+   {
+    "id": "R15",
+    "in_scope": true
+   },
+   {
+    "id": "R11",
+    "in_scope": true
+   }
+  ]
+ },
+ "verdicts": {
+  "proposed": true,
+  "original": null,
+  "final": true,
+  "flag": false
+ }
+}

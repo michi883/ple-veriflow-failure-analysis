@@ -1,0 +1,20 @@
+Self-checks verify arithmetic, not decisions: research materials for a PLE hackathon Writeup
+Copyright 2026 Michi Yamamoto
+
+Code in this repository is licensed under the Apache License, Version 2.0 (see LICENSE).
+Text and figures are licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+
+This repository includes third-party software:
+
+  third_party/veriflow-ple-starter/
+    From the Kaggle notebook "Physical Engineerings Last Exam: Starter Notebook" by Pablo Diego Pereira
+    (https://www.kaggle.com/code/pablodiegoo/physical-engineerings-last-exam-starter-notebook), Apache License 2.0.
+    Built on sample_submissions/plan-verify from https://github.com/google-research/ple,
+    Copyright 2026 Google LLC, Apache License 2.0.
+    Modification: model_api in submission.yaml.
+
+data/template_baseline/ is derived from the public artifacts of the official PLE submission template
+(https://github.com/physical-engineerings-last-exam/submission-template), Apache License 2.0.
+
+The PLE benchmark: Han et al., "PLE: Physical-Engineering's Last Exam", 2026, arXiv:2610.30537.
+No PLE task files, prompts, graders or rubric text are included.

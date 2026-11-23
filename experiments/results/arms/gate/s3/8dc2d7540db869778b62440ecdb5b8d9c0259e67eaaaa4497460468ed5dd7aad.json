@@ -1,0 +1,93 @@
+{
+ "decision": "W4-ramp",
+ "test": "baseline",
+ "prompt_sha256": "8dc2d7540db869778b62440ecdb5b8d9c0259e67eaaaa4497460468ed5dd7aad",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 22848,
+  "inference_geo": "global",
+  "input_tokens": 1258,
+  "output_tokens": 1204,
+  "output_tokens_details": {
+   "thinking_tokens": 385
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.0336816,
+ "latency_s": 10.2,
+ "effort": "medium",
+ "max_tokens": 12000,
+ "arm": "gate",
+ "redacted": true,
+ "text_sha256": "ebf4b5d2f372e813e8def7a146d3f5cfed3a3062897a5117146af8b2a57c2b31",
+ "text_chars": 1994,
+ "prose_outside_json": false,
+ "answer": {
+  "original": "absent",
+  "proposed": {
+   "treatment": "carry",
+   "schedule_item": "2.47 Access ramp, 4-inch AC over 6-inch … [withheld; sha256:d1f39271b969]",
+   "quantity": 228,
+   "unit": "SY",
+   "unit_price": 32.0,
+   "amount": 7296.0
+  },
+  "final": {
+   "treatment": "flag_no_schedule_match",
+   "schedule_item": "none — 2.47 prices 4-inch AC over 6-inch… [withheld; sha256:72b1ff32617e]",
+   "quantity": 0,
+   "unit": "SY",
+   "unit_price": 0,
+   "amount": 0
+  },
+  "changes_original": true,
+  "link": "inferred",
+  "confidence": 0.72,
+  "governing_rules": [
+   {
+    "id": "R4",
+    "verbatim": true
+   },
+   {
+    "id": "R6",
+    "verbatim": true
+   }
+  ],
+  "evidence_verbatim": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "keep_or_flag_rules": [
+   {
+    "id": "R6",
+    "condition_met": true
+   },
+   {
+    "id": "R7",
+    "condition_met": false
+   },
+   {
+    "id": "R5",
+    "condition_met": false
+   }
+  ],
+  "scope_rules": [
+   {
+    "id": "R4",
+    "in_scope": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "frozen_at": "2026-11-22 17:18:57",
+ "mechanism": "rule_gate.protocol + rule_gate.apply(require_direct=None)",
+ "sha256": {
+  "rule_gate.py": "3be94ae64afbfd3153898d4d3abd4e434721acb5a6d65d0b5c2466f6de750b8b",
+  "pilot.py": "6a5bbb0a14ffb21a4f965ef21b8c654592a69d78f6ed9d3269810e77c45f6b07",
+  "harness.py": "ff794a0556c0f587920e81e21130fc0fc3798b83f7ee1777d9e8ea23bbc1a6bb"
+ },
+ "note": "Frozen before any held-out task data was downloaded or read.",
+ "io_generalization": {
+  "at": "2026-11-22 17:22:58",
+  "rule_gate.py_sha256": "e688009685c29eda523ba8e95137eda74ffae70b41b94c171eb2620781ecfba0",
+  "change": "protocol() takes the decision-object field text as a parameter (default = original estimate text, prompts byte-identical); _changed()/fallback handle {'value': ...} decisions. Gate logic unchanged. Made after reading held-out task structure and grading data, before any held-out model call."
+ }
+}

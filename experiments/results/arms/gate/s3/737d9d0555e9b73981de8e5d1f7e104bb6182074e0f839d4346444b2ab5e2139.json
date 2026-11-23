@@ -1,0 +1,98 @@
+{
+ "decision": "W2-2.08",
+ "test": "baseline",
+ "prompt_sha256": "737d9d0555e9b73981de8e5d1f7e104bb6182074e0f839d4346444b2ab5e2139",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 22848,
+  "inference_geo": "global",
+  "input_tokens": 1266,
+  "output_tokens": 1539,
+  "output_tokens_details": {
+   "thinking_tokens": 756
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.0404136,
+ "latency_s": 12.4,
+ "effort": "medium",
+ "max_tokens": 12000,
+ "arm": "gate",
+ "redacted": true,
+ "text_sha256": "50a98bfe2cf4805d379682b379fa521f7b7e773588d74fb63c55f106cd169075",
+ "text_chars": 1662,
+ "prose_outside_json": false,
+ "answer": {
+  "original": {
+   "treatment": "carry",
+   "schedule_item": "2.08",
+   "quantity": 1334,
+   "unit": "LF",
+   "unit_price": 372.0,
+   "amount": 496248.0
+  },
+  "proposed": {
+   "treatment": "carry",
+   "schedule_item": "2.08",
+   "quantity": 1334,
+   "unit": "LF",
+   "unit_price": 372.0,
+   "amount": 496248.0
+  },
+  "final": {
+   "treatment": "carry",
+   "schedule_item": "2.08",
+   "quantity": 1334,
+   "unit": "LF",
+   "unit_price": 372.0,
+   "amount": 496248.0
+  },
+  "changes_original": false,
+  "link": "direct",
+  "confidence": 0.9,
+  "governing_rules": [
+   {
+    "id": "R5",
+    "verbatim": true
+   },
+   {
+    "id": "R8",
+    "verbatim": true
+   }
+  ],
+  "evidence_verbatim": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "keep_or_flag_rules": [
+   {
+    "id": "R6",
+    "condition_met": false
+   },
+   {
+    "id": "R7",
+    "condition_met": false
+   }
+  ],
+  "scope_rules": [
+   {
+    "id": "R4",
+    "in_scope": true
+   }
+  ]
+ }
+}

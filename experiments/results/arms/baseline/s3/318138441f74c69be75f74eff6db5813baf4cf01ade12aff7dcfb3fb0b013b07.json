@@ -1,0 +1,41 @@
+{
+ "decision": "W4-ramp",
+ "test": "baseline",
+ "prompt_sha256": "318138441f74c69be75f74eff6db5813baf4cf01ade12aff7dcfb3fb0b013b07",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 22848,
+  "inference_geo": "global",
+  "input_tokens": 262,
+  "output_tokens": 822,
+  "output_tokens_details": {
+   "thinking_tokens": 684
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.0220576,
+ "latency_s": 8.7,
+ "effort": "medium",
+ "max_tokens": 12000,
+ "arm": "baseline",
+ "redacted": true,
+ "text_sha256": "f71d052f272a4a06b3245293588d68777414d7d2872a42d1e7b172c44a03c3e7",
+ "text_chars": 294,
+ "prose_outside_json": false,
+ "answer": {
+  "treatment": "flag_no_schedule_match",
+  "schedule_item": null,
+  "quantity": 0,
+  "unit": "SY",
+  "unit_price": null,
+  "amount": null,
+  "confidence": 0.55
+ }
+}

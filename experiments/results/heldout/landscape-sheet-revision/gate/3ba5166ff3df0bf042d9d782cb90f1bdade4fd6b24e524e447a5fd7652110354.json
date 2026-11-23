@@ -1,0 +1,85 @@
+{
+ "task": "landscape-sheet-revision",
+ "arm": "gate",
+ "decision": "L6-c8",
+ "prompt_sha256": "3ba5166ff3df0bf042d9d782cb90f1bdade4fd6b24e524e447a5fd7652110354",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 137818,
+  "inference_geo": "global",
+  "input_tokens": 963,
+  "output_tokens": 1036,
+  "output_tokens_details": {
+   "thinking_tokens": 283
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.052135600000000004,
+ "latency_s": 8.6,
+ "effort": "medium",
+ "redacted": true,
+ "text_sha256": "3bc5f28902748a4274aec2c8dbd03f06437ec73cfc518c03dfe334ef40a3ce6d",
+ "text_chars": 1873,
+ "prose_outside_json": false,
+ "answer": {
+  "original": {
+   "value": "11/18/2026"
+  },
+  "proposed": {
+   "value": "12/16/2026"
+  },
+  "final": {
+   "value": "12/16/2026"
+  },
+  "changes_original": true,
+  "link": "direct",
+  "confidence": 0.85,
+  "governing_rules": [
+   {
+    "id": "R2",
+    "verbatim": true
+   },
+   {
+    "id": "R3",
+    "verbatim": true
+   }
+  ],
+  "evidence_verbatim": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "keep_or_flag_rules": [
+   {
+    "id": "R1",
+    "condition_met": false
+   }
+  ],
+  "scope_rules": [
+   {
+    "id": "R2",
+    "in_scope": true
+   },
+   {
+    "id": "R3",
+    "in_scope": true
+   }
+  ]
+ },
+ "verdicts": {
+  "proposed": true,
+  "original": false,
+  "final": true,
+  "flag": false
+ }
+}

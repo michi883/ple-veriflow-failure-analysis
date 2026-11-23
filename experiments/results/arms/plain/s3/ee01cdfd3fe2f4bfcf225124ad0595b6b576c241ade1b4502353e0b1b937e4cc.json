@@ -1,0 +1,41 @@
+{
+ "decision": "D4-2.03",
+ "test": "baseline",
+ "prompt_sha256": "ee01cdfd3fe2f4bfcf225124ad0595b6b576c241ade1b4502353e0b1b937e4cc",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 22848,
+  "inference_geo": "global",
+  "input_tokens": 330,
+  "output_tokens": 416,
+  "output_tokens_details": {
+   "thinking_tokens": 272
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "cost_usd": 0.014209600000000001,
+ "latency_s": 5.0,
+ "effort": "medium",
+ "max_tokens": 12000,
+ "arm": "plain",
+ "redacted": true,
+ "text_sha256": "5504581f7a8e6a12715981c007207ab6e12d27ffe2571fa1fc4af9c8704ec1eb",
+ "text_chars": 302,
+ "prose_outside_json": false,
+ "answer": {
+  "treatment": "carry",
+  "schedule_item": "2.03",
+  "quantity": 100,
+  "unit": "LF",
+  "unit_price": 138.0,
+  "amount": 13800.0,
+  "confidence": 0.8
+ }
+}

@@ -1,0 +1,60 @@
+{
+  "note": "Scoring only; never read when building prompts. 'reference' is the graded-correct answer on the original evidence (rubric-direct: a rubric line states it; rubric-inferred: forced by the rubric's $1,303,717.70 subtotal, which equals the carried $1,276,934 plus exactly the 2.35/2.36/2.38/2.03 changes). 'sensitivity' is what the instruction's rules require on the modified evidence and is written to hold under any reasonable reading, so a miss means the decision did not follow the decisive evidence. 'delta' criteria compare the change from the model's own baseline answer.",
+  "forbidden_in_prompt": ["1,303,717.70", "1303717.7", "5,384,000", "5384000", "1,312,474", "5,393,000", "35,540", "684.40", "10,326", "10326", "22.02", "15,083.70", "15,084", "227.78", "390.67", "ver_"],
+  "decisions": {
+    "D1-2.35": {
+      "veriflow": {"quantity": 0}, "veriflow_correct": true,
+      "reference": {"quantity": 0}, "reference_source": "rubric-inferred",
+      "sensitivity": {"quantity": 10},
+      "why": "With 4-foot (48-inch) manholes, every manhole in the C-8 schedule (S-1, S-2, S-4, S-6, S-7, S-8, S-10, S-11, S-12, S-14 = 10) falls under 2.35."
+    },
+    "D2-2.36": {
+      "veriflow": {"quantity": 10}, "veriflow_correct": true,
+      "reference": {"quantity": 10}, "reference_source": "rubric-direct",
+      "sensitivity": {"quantity": 9},
+      "why": "S-7 is no longer a manhole, so 9 of the 10 manholes remain."
+    },
+    "D3-2.38": {
+      "veriflow": {"quantity": 22.02}, "veriflow_correct": true,
+      "reference": {"quantity": 22.02}, "reference_source": "rubric-direct ($15,083.70 = 22.02 VF x $685.00)",
+      "sensitivity": {"quantity": 23.02},
+      "why": "S-14 depth (rim minus invert out) grows by 1.00 ft, so depth beyond 10 ft grows by 1.00 VF."
+    },
+    "D4-2.03": {
+      "veriflow": {"quantity": 100}, "veriflow_correct": true,
+      "reference": {"quantity": 100}, "reference_source": "rubric-direct ($13,800 = 100 LF x $138.00)",
+      "sensitivity": {"quantity": 200},
+      "why": "Drop 2,851.00 - 2,850.50 = 0.50 ft at 0.25% = 200 LF."
+    },
+    "W1-2.06": {
+      "veriflow": {"quantity": 685}, "veriflow_correct": false,
+      "reference": {"quantity": 687}, "reference_source": "rubric-inferred",
+      "sensitivity": {"delta": 4, "quantity": 691},
+      "why": "Moving S-8 4.00 ft downstream lengthens the S-5 to S-8 reach by 4.00 ft on a tangent, under any length method."
+    },
+    "W2-2.08": {
+      "veriflow": {"quantity": 1335}, "veriflow_correct": false,
+      "reference": {"quantity": 1334}, "reference_source": "rubric-inferred",
+      "sensitivity": {"delta": -4, "quantity": 1330},
+      "why": "Moving S-8 4.00 ft downstream shortens the S-8 to S-14 reach by 4.00 ft on a tangent, under any length method."
+    },
+    "W3-2.44": {
+      "veriflow": {"quantity": 10326}, "veriflow_correct": false,
+      "reference": {"quantity": 10000}, "reference_source": "rubric-inferred",
+      "sensitivity": {"quantity": 11200},
+      "why": "The plans now give an explicit excavation quantity for the item, which governs over the carried figure and over any conversion of storage volume."
+    },
+    "W4-ramp": {
+      "veriflow": {"treatment": "carry", "schedule_item": "3.05"}, "veriflow_correct": false,
+      "reference": {"treatment": "flag_no_schedule_match", "schedule_item": null}, "reference_source": "rubric-direct (ramp has no matching schedule item)",
+      "sensitivity": {"treatment": "carry", "schedule_item": "2.47"},
+      "why": "A 4-inch AC over 6-inch aggregate base ramp matches Section 2 item 2.47 exactly."
+    },
+    "W5-path": {
+      "veriflow": {"treatment": "carry", "schedule_item": "3.05"}, "veriflow_correct": false,
+      "reference": {"treatment": ["flag_no_schedule_match", "exclude"], "schedule_item": null}, "reference_source": "rubric-inferred (no amount added)",
+      "sensitivity": {"treatment": "carry", "schedule_item": "2.48"},
+      "why": "Section 2 now publishes an exact item for the maintenance path."
+    }
+  }
+}
