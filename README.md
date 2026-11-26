@@ -3,6 +3,8 @@
 Research materials for our Kaggle Writeup in the hackathon *Google - Agent Harness on Physical-Engineering's Last Exam (PLE)*:
 <https://www.kaggle.com/competitions/physical-engineerings-last-exam/writeups/self-checks-verify-arithmetic-not-decisions-a-pl>
 
+> **Update, 2026-11-26.** The entry has since moved on: it is now [michi883/ple-baseline](https://github.com/michi883/ple-baseline) at commit `ff27d9d47b45a343ebadb9aa5447907171271757`, which adds Clash Flag (a deterministic IFC clash check) and artifacts for 28 of the 29 dev tasks. The entry's README and the Kaggle Writeup describe that work. This repository remains the record of the earlier failure analysis below, plus one supplementary note: [Clash Flag with Gemini 4 Neon](docs/NEON_CROSS_MODEL.md), a two-task cross-model check.
+
 **This repository is not the competition entry.** The entry is [michi883/ple-baseline](https://github.com/michi883/ple-baseline) at commit `81c4e77ccee7e6eb8832241f5364e75674f9e759`: the organizers' official submission template plus Scope Guard, a deterministic check we added to it. (Until 2026-11-22 the entry was the template unchanged, commit `d988c45fcb8b860268588de379cf5436f1c70467`, which is still the first commit there.) This repository holds what we contributed: a failure analysis of one confidently wrong agent run, three follow-up experiments, their saved results, and a script that recomputes every number in the Writeup.
 
 ## Findings

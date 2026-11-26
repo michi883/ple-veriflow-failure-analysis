@@ -19,6 +19,7 @@ A public repository is outside the competition, so nothing here reproduces task 
 | The analyzed run | metrics, per-criterion pass or fail with our labels, a step table with sizes and flags, the first paragraph of the final message |
 | The organizers' 29-task run | per-task score, steps and file counts, derived from their public artifacts |
 | Hashes | SHA-256 of every withheld file (`data/WITHHELD.json`) and of every reply's full text |
+| The Gemini 4 Neon check (`docs/NEON_CROSS_MODEL.md`) | per-task aggregates only: scores, clash counts by IFC class, calls, tokens, list-price cost. Its trajectories, logs, models and verifier output are withheld |
 
 ## Withheld
 

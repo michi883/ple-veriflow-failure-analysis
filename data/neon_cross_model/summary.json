@@ -1,0 +1,87 @@
+{
+ "date": "2026-11-26",
+ "model_api": "google-cloud/gemini-4-neon",
+ "entry_commit_compared": "ff27d9d47b45a343ebadb9aa5447907171271757",
+ "harness": "217269f code + 2 changed lines (model_api; Pi fallback limits for an unlisted model)",
+ "runs_per_task": 1,
+ "flag_off_ablation": false,
+ "in_dev_score": false,
+ "list_price_usd_per_million": {
+  "input": 3.0,
+  "output": 15.0,
+  "cached_input": 0.15
+ },
+ "tasks": {
+  "data-hall-mep-routing": {
+   "ifc_built": true,
+   "clash_checks": 4,
+   "clashing_pairs_first_build": 0,
+   "clashing_pairs_final": 0,
+   "flag_shown": false,
+   "verifier_score": 0.94,
+   "valid": true,
+   "verifier_clash_count": 0,
+   "connectivity_passed": true,
+   "model_calls_settled": 41,
+   "attempts_timed_out": 4,
+   "agent_seconds": 2648,
+   "prompt_tokens": 2777151,
+   "cached_prompt_tokens": 2591430,
+   "output_tokens": 128016,
+   "cost_usd_settled": 2.87,
+   "cost_usd_upper_bound": 7.48
+  },
+  "data-hall-mep-routing-offset": {
+   "ifc_built": true,
+   "clash_checks": 4,
+   "clashing_pairs_first_build": 18,
+   "clashing_pairs_after_flag": 0,
+   "clashing_pairs_final": 0,
+   "flag_shown": true,
+   "first_build_pairs_by_class": {
+    "IfcPipeSegment x IfcPipeSegment": 6,
+    "IfcCableCarrierSegment x IfcCableCarrierSegment": 4,
+    "IfcCableSegment x IfcCableSegment": 4,
+    "IfcBuildingElementProxy x IfcBuildingElementProxy": 4
+   },
+   "rebuilds_to_zero": 1,
+   "verifier_score": 0.92,
+   "valid": true,
+   "verifier_clash_count": 0,
+   "connectivity_passed": true,
+   "model_calls_settled": 40,
+   "attempts_timed_out": 0,
+   "agent_seconds": 1379,
+   "prompt_tokens": 2883603,
+   "cached_prompt_tokens": 2669304,
+   "output_tokens": 135258,
+   "cost_usd_settled": 3.07,
+   "cost_usd_upper_bound": 3.07
+  }
+ },
+ "setup_cost_usd": 0.13,
+ "total_cost_usd_settled": 6.07,
+ "total_cost_usd_upper_bound": 10.68,
+ "opus_5_5_reference": {
+  "data-hall-mep-routing": {
+   "clashing_pairs": [
+    23,
+    0
+   ],
+   "verifier_score": 0.904,
+   "cost_usd": 18.92,
+   "agent_minutes": 66
+  },
+  "data-hall-mep-routing-offset": {
+   "clashing_pairs": [
+    18,
+    6,
+    4,
+    0
+   ],
+   "verifier_score": 0.96,
+   "cost_usd": 20.28,
+   "agent_minutes": 73
+  }
+ }
+}
